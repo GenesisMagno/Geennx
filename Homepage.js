@@ -7,16 +7,20 @@ logobt.addEventListener("click", ()=>{
 })
 
 
-
-
-
 function featuredanimePLAYER(){
 let trailer1=document.querySelector(".featured-anime-container");
-trailer1.addEventListener("mouseover", ()=>{
+let videocontainer=document.querySelector("#video-container");
+let playtrailer=document.querySelector(".trailer1");
 
-  playtrailer=document.querySelector(".trailer1");
-  playtrailer.style.opacity="1";
+trailer1.addEventListener("mouseover", ()=>{
+  videocontainer.style.opacity="0.9";
   playtrailer.play();
+
+  trailer1.addEventListener("mouseleave",()=>{
+    videocontainer.style.opacity="0";
+    playtrailer.pause();
+   
+  })
 })
 }
 
@@ -87,8 +91,8 @@ arrowleft.forEach((arrowlef, i) => {
       console.log(totalclicks);
       if(totalclicks >0){
         movieLists[i].style.transform = `translateX(${
-          movieLists[i].computedStyleMap().get("transform")[0].x.value + 330
-        }px)`;
+          movieLists[i].computedStyleMap().get("transform")[0].x.value + container.clientWidth
+      }px)`;
         totalclicks--;
         if(totalclicks==0){
           arrowlef.style.opacity="0";

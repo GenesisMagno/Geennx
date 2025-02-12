@@ -10,32 +10,24 @@
     <title>Watch Anime</title>
 </head>
 <body>
-    <hr>
-    <div id="body-wrapper">
-    <div class="navigationBar" >
-        <div class="navigationBar-container">
+    <div id="main-body" style="width: 100vw; background-color: white;">
+        <div class="navigationBar" >
             <div class="logo-container" id="logo-container">
-                <img class="logo" id="logo"src="Images/GeNX.png">
+                <img class="logo" id="logo"src="logo.png">
             </div>
 
-            <div class="menu-container">
-                <h4>
-                <ul class="menu-list">
-                    <li class="menu-list-item" id="home">
-                        <a class="menu-list-item" id="home" href="Homepage.html">HOME</a>
+            <ul class="menu-list">
+                <li class="menu-list-item" id="home">
+                    <a class="menu-list-item" id="home" href="Homepage.html">Home</a>
+                </li>
+                    <li class="menu-list-item" id="animelist">
+                        <a class="menu-list-item" id="animelist" href="2ndPage.html">Anime List</a>
                     </li>
-                     <li class="menu-list-item" id="animelist">
-                         <a class="menu-list-item" id="animelist" href="2ndPage.html">ANIME LIST</a>
-                     </li>
-                    <li class="menu-list-item" id="animes">
-                         <a class="menu-list-item" id="animes" href="3rdPage.html">ANIME PLAYER</a>
-                </ul>
-                </h4>
-            </div>
+                <li class="menu-list-item" id="animes">
+                    <a class="menu-list-item" id="animes" href="3rdPage.html">Anime Player</a>
+            </ul>   
+        
             
-            <div class="search-container">
-                <input class="list-menu" type="text" placeholder="Search">
-            </div>
             <div class="profile-container">
                 
                 <img src="Images/Kaneki.jpg" class="profile-picture">
@@ -45,21 +37,28 @@
                 </div>
             </div>
         
-        </div>
+        
         </div>
         <hr>
-        
+    
         <div class="main-container">
             
             <div class="featured-container">
-                <div class="featured-anime-container">
-                    <video muted loop class="trailer1" >
-                        <source src="sololevelingtrailer.mp4">
-                    </video>
+
+                <div class="featured-anime-container"> 
                     <div class="featured-anime" 
-                    style="background: linear-gradient(to bottom,rgba(0,0,0,0), #191919), url('Images/sololeveling.png');">
+                        style="background: linear-gradient(to bottom,rgba(0,0,0,0), #191919), url('animepreviewpicture.png'); background-size:cover ; width: 100%;
+                        height: 100%;">
+                    </div>
+                    <div id="video-container">
+                        <video muted loop class="trailer1">
+                        <source src="sololevelingtrailer.mp4">
+                        </video>
+                    </div>
+                    
+                    
                 </div>
-                </div>
+
                 <div class="featured-anime-description-border">
                     
                     <div class="featured-anime-description-title">
@@ -78,12 +77,9 @@
                         </div>
                        
                     </div>
-                    <div id="playbutton-container">
-                        <button class="playbutton" type="button">PLAY</button>
-                    </div>
+                    <button class="playbutton" type="button"><i class="fa-solid fa-play" style="margin-right: 0.3rem;"></i>PLAY</button>
+                    
                 </div>
-                
-                
                 
             </div>
             
@@ -92,214 +88,60 @@
                 <div class="movie-list-container">
                     <h1 class="movie-list-title">NEW RELEASES</h1>
                     <div class="movie-list-wrapper">
+                        <i class="fas fa-chevron-right arrowright"></i>
+                        <i class="fas fa-chevron-left arrowleft"></i>
                         <div class="movie-list">
-    
+                        
                             <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/DemonSlayer.jpg" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Demon Slayer</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
+                                <img class="movie-list-item-img" src="https://wallpapers.com/images/featured/anime-dbt18qjb7b1cstr1.jpg" alt="">
+                                
+                                
                             </div>
     
                             <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/Aot.png" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Attack on Titan</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
+                                <img class="movie-list-item-img" src="https://wallpapers.com/images/featured/anime-dbt18qjb7b1cstr1.jpg" alt="">
+                                
+                                
                             </div>
-    
                             <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/god.jpg" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">God of Highschool</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
+                                <img class="movie-list-item-img" src="https://wallpapers.com/images/featured/anime-dbt18qjb7b1cstr1.jpg" alt="">
+                                
+                                
                             </div>
-    
                             <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/Tokyoghoul.png" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Tokyo Ghoul</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
+                                <img class="movie-list-item-img" src="https://wallpapers.com/images/featured/anime-dbt18qjb7b1cstr1.jpg" alt="">
+                                
+                                
                             </div>
-    
                             <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/DemonSlayer.jpg" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Demon Slayer</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
+                                <img class="movie-list-item-img" src="https://wallpapers.com/images/featured/anime-dbt18qjb7b1cstr1.jpg" alt="">
+                                
+                                
                             </div>
-    
                             <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/DemonSlayer.jpg" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Demon Slayer</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
+                                <img class="movie-list-item-img" src="https://wallpapers.com/images/featured/anime-dbt18qjb7b1cstr1.jpg" alt="">
+                                
+                                
+                            </div><div class="movie-list-item">
+                                <img class="movie-list-item-img" src="https://wallpapers.com/images/featured/anime-dbt18qjb7b1cstr1.jpg" alt="">
+                                
+                                
                             </div>
-    
-                            <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/DemonSlayer.jpg" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Demon Slayer</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
+                                
                             </div>
     
                         </div>
-                        <i class="fas fa-chevron-right arrowright"></i>
-                        <i class="fas fa-chevron-left arrowleft"></i>
+                        
                     </div>
                 </div>
 
-                <div class="movie-list-container">
-                    <h1 class="movie-list-title">RECOMMENDED FOR YOU</h1>
-                    <div class="movie-list-wrapper">
-                        <div class="movie-list">
-    
-                            <div class="movie-list-item" id="darling in the franxx">
-                                
-                                    <img class="movie-list-item-img" src="Images/darling.jpg" alt="">
-                                    <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                        <source src="animes/Darlinginthefranxx/trailer/darlingtrailer.mp4">
-                                     </video></span>
-                                    <div class="movie-title-play-button-container">    
-                                        <span class="movie-list-item-title">Darling in the Franxx</span>
-                                        <div class="play-button-outer">
-                                         <div class="play-button"></div>
-                                     </div>
-                                    </div>
-                                
-                            </div>
-    
-                            <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/rezero.jpg" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Re zero</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/blackclover.png" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Black Clover</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/jujutsu.png" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Jujutsu Kaisen</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/DemonSlayer.jpg" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Demon Slayer</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/DemonSlayer.jpg" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Demon Slayer</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="movie-list-item">
-                                <img class="movie-list-item-img" src="Images/DemonSlayer.jpg" alt="">
-                                <span class="trailer"><video muted class="trailer2" id="trailer2" width="270px" height="200px" >
-                                    <source src="trailer.mp4">
-                                </video></span>
-                                <div class="movie-title-play-button-container">    
-                                    <span class="movie-list-item-title">Demon Slayer</span>
-                                    <div class="play-button-outer">
-                                        <div class="play-button"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                        </div>
-                        <i class="fas fa-chevron-right arrowright"></i>
-                        <i class="fas fa-chevron-left arrowleft"></i>
-                    </div>
-                </div>
+                
             </div>
             
             <div id="view-profile-container"></div> 
         </div>
     </div>
-
+</div>
  
 <script src="Homepage.js"></script>
 <script src="animeSelect.js"></script>
